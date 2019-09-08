@@ -1,0 +1,19 @@
+{
+  "name": "discord-fbi",
+  "version": "1.0.1",
+  "description": "A NodeJS Discord RPC that tracks your every (active window) move",
+  "main": "src/index.js",
+  "scripts": {},
+  "keywords": ["discord", "discord RPC", "discord FBI"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexthemaster/discord-fbi"
+  },
+  "homepage": "https://github.com/alexthemaster/discord-fbi",
+  "author": "Kovacs Alex (alex@atm.moe)",
+  "license": "MIT",
+  "dependencies": {
+    "active-win": "^5.1.2",
+    "discord-rpc": "github:discordjs/RPC"
+  }
+}
