@@ -40,7 +40,7 @@ class FBI {
 
         this.RPC.setActivity({
             details: active.title,
-            state: `${active.owner.name} / ${Number(active.memoryUsage / 100000).toFixed(0)}MB`,
+            state: `${active.owner.name} / ${Number(active.memoryUsage / 1000000).toFixed(0)}MB`,
             largeImageKey: 'main',
             largeImageText: "We're watching.",
             smallImageKey: 'eyes'
