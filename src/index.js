@@ -14,7 +14,7 @@ class FBI {
         
         this.classified = ['WinSCP.exe', 'putty.exe'];
         if (typeof classified === 'string') this.classified.push(classified);
-        this.classified.push(...classified);
+        else this.classified.push(...classified);
         this._init();
     }
 

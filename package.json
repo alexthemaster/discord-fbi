@@ -1,6 +1,6 @@
 {
   "name": "discord-fbi",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A NodeJS Discord RPC that tracks your every (active window) move",
   "main": "src/index.js",
   "scripts": {},
