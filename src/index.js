@@ -9,9 +9,9 @@ class FBI {
      * @param {Array<String>} classified An array of process names to hide the title of (sensitive data reasons, included: WinSCP.exe && putty.exe)
      */
     constructor(classified = []) {
-        this._clientID = '620240890723565598';
+        this._clientID = '628652359232389132';
         this.RPC = null;
-        
+
         this.classified = ['WinSCP.exe', 'putty.exe'];
         if (typeof classified === 'string') this.classified.push(classified);
         else this.classified.push(...classified);
@@ -20,7 +20,7 @@ class FBI {
 
     _init() {
         this.RPC = new Client({ transport: "ipc" });
-        this.RPC.login({clientId: this._clientID});
+        this.RPC.login({ clientId: this._clientID });
         this.RPC.on('ready', () => console.log(`Logged in for ${this.RPC.user.username}`));
 
         setInterval(() => {
@@ -41,7 +41,7 @@ class FBI {
 
         this.RPC.setActivity({
             details: active.title,
-            state: `${active.owner.name} / ${Number(active.memoryUsage / 1000000).toFixed(0)}MB`,
+            state: `${active.owner.name}`,
             largeImageKey: 'main',
             largeImageText: "We're watching.",
             smallImageKey: 'eyes'
