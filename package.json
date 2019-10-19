@@ -1,8 +1,11 @@
 {
   "name": "discord-fbi",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "A NodeJS Discord RPC that tracks your every (active window) move",
   "main": "src/index.js",
+  "bin": {
+    "discord-fbi": "src/bin/discord-fbi.js"
+  },
   "scripts": {},
   "keywords": [
     "discord",
@@ -19,5 +22,8 @@
   "dependencies": {
     "active-win": "^5.1.2",
     "discord-rpc": "^3.0.2"
+  },
+  "optionalDependencies": {
+    "commander": "^3.0.2"
   }
 }
