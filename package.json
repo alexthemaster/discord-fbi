@@ -20,7 +20,7 @@
   "author": "Kovacs Alex (alex@atm.moe)",
   "license": "MIT",
   "dependencies": {
-    "active-win": "^5.1.2",
+    "active-win": "^6.1.0",
     "discord-rpc": "^3.0.2"
   },
   "optionalDependencies": {
