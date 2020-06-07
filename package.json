@@ -24,6 +24,6 @@
     "discord-rpc": "^3.0.2"
   },
   "optionalDependencies": {
-    "commander": "^3.0.2"
+    "commander": "^5.1.0"
   }
 }
